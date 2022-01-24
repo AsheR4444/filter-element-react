@@ -1,12 +1,22 @@
 .fe-params {
   margin-bottom: 22px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 40px;
+  gap: 30px;
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    row-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .fe-param {
-  max-width: 170px;
+  @media (min-width: 576px) {
+    max-width: 170px;
+  }
 }
 
 .fe-param__button {
@@ -18,18 +28,20 @@
   font-weight: 500;
 
   &:hover {
-    color: #0f74d1;
+    color: var(--col-4);
   }
 }
 
 .fe-param__button-arrow {
-  color: #b2b2b2;
+  color: var(--col-5);
 }
 
 .fe-param__input {
   padding: 5px 6px;
-  border: 1px solid #b2b2b2;
+  border: 1px solid var(--col-5);
   border-radius: 3px;
+  font-size: 12px;
+  height: 25px;
 }
 
 .fe-param__range {

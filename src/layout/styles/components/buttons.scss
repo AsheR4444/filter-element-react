@@ -1,5 +1,5 @@
 .fe-init-button {
-  color: #fff;
+  color: var(--col-1);
   background: none;
   font-weight: 500;
   text-align: left;
@@ -24,7 +24,7 @@
 }
 
 .fe-close-button {
-  color: #0f74d1;
+  color: var(--col-4);
   font-size: 14px;
   font-weight: 500;
 }

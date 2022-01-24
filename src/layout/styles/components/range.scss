@@ -25,21 +25,21 @@
 }
 
 .fe-range__track {
-  background-color: #b2b2b2;
+  background-color: var(--col-5);
   width: 100%;
   z-index: 1;
   overflow: hidden;
 }
 
 .fe-range__range {
-  background-color: #0f74d1;
+  background-color: var(--col-4);
   z-index: 2;
   max-width: 100%;
 }
 
 .fe-range__left-value,
 .fe-range__right-value {
-  color: #dee2e6;
+  color: var(--col-6);
   font-size: 12px;
   margin-top: 20px;
 }
@@ -78,10 +78,10 @@
 }
 
 .fe-thumb::-webkit-slider-thumb {
-  background-color: #ffffff;
+  background-color: var(--col-1);
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 1px 1px #b2b2b2;
+  box-shadow: 0 0 1px 1px var(--col-5);
   cursor: pointer;
   height: 18px;
   width: 18px;
@@ -91,6 +91,22 @@
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #0f74d1;
+    background-color: var(--col-4);
   }
+}
+
+.fe-param__input:focus + .fe-param__input-value {
+  display: none;
+}
+
+.fe-param__input-wrapper {
+  position: relative;
+  font-size: 12px;
+}
+
+.fe-param__input-value {
+  position: absolute;
+  left: 30px;
+  top: 3px;
+  color: var(--col-5);
 }

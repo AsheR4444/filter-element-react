@@ -30,7 +30,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-size: 16px;
-  color: #222222;
+  color: var(--col-2);
 }
 
 input {
@@ -52,11 +52,11 @@ button:disabled {
 .fe-main-wrapper {
   max-width: 1024px;
   margin: 0 auto;
-  background-color: #f8f8f8;
+  background-color: var(--col-3);
 }
 
 .fe-head {
-  background: #0f74d1;
+  background: var(--col-4);
   border-radius: 6px;
 }
 

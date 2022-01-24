@@ -76,18 +76,24 @@ export const Range = ({ min, max, onChange }) => {
             </div>
 
             <div className="fe-param__inputs">
-                <input
-                    type="text"
-                    placeholder={`от ${minVal}`}
-                    className="fe-param__input"
-                    onChange={(event) => setMinVal(+event.target.value)}
-                />
-                <input
-                    type="text"
-                    placeholder={`до ${maxVal}`}
-                    className="fe-param__input"
-                    onChange={(event) => setMaxVal(+event.target.value)}
-                />
+                <label className="fe-param__input-wrapper">
+                    <input
+                        type="text"
+                        placeholder="от"
+                        className="fe-param__input"
+                        onChange={(event) => setMinVal(+event.target.value)}
+                    />
+                    <span className="fe-param__input-value">{minVal}</span>
+                </label>
+                <label className="fe-param__input-wrapper">
+                    <input
+                        type="text"
+                        placeholder="до"
+                        className="fe-param__input"
+                        onChange={(event) => setMaxVal(+event.target.value)}
+                    />
+                    <span className="fe-param__input-value">{maxVal}</span>
+                </label>
             </div>
         </>
     )
