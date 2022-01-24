@@ -1,25 +1,17 @@
 import React, { useState } from 'react'
 
 import { api as filterParameters } from './API'
+
 import { Button } from './components/Button/Button'
-import { ParametersList } from './components/ParametersList/ParametersList'
+import { Filter } from './components/Filter/Filter'
 
 import { ReactComponent as Arrow } from './layout/svg/arrow.svg'
 
 export const App = () => {
     const [isFilterOpened, setisFilterOpened] = useState(false)
-    const [parametersQueue, setParameterQueue] = useState(filterParameters.slice(0, 4))
 
     const openFilter = () => {
         setisFilterOpened(!isFilterOpened)
-    }
-
-    const showParameters = () => {
-        if (parametersQueue.length > 4) {
-            setParameterQueue(filterParameters.slice(0, 4))
-        } else {
-            setParameterQueue(filterParameters)
-        }
     }
 
     return (
@@ -34,16 +26,7 @@ export const App = () => {
                     </Button>
                 </div>
 
-                {isFilterOpened && (
-                    <div className="fe-content">
-                        <ParametersList list={parametersQueue} />
-
-                        <button className="fe-close-button" onClick={showParameters}>
-                            Показать {parametersQueue.length > 4 ? 'меньше ' : 'больше '}
-                            параметров ({filterParameters.length})
-                        </button>
-                    </div>
-                )}
+                <Filter opened={isFilterOpened} parametersList={filterParameters} />
             </div>
         </div>
     )

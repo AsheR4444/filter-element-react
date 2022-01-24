@@ -17,9 +17,7 @@ export const Parameter = ({ title, type, min, max, values }) => {
     switch (type) {
         case 'numbers':
             ParameterContent = () => (
-                <>
-                    <Range min={min} max={max} onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)} />
-                </>
+                <Range min={min} max={max} onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)} />
             )
             break
         case 'select':
