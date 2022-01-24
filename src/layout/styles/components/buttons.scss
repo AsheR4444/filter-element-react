@@ -1,0 +1,30 @@
+.fe-init-button {
+  color: #fff;
+  background: none;
+  font-weight: 500;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.fe-arrow-button__arrow {
+  width: 13px;
+  height: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.fe-arrow-button.is-opened .fe-arrow-button__arrow {
+  transform: rotate(180deg);
+}
+
+.fe-init-button__arrow {
+  margin-left: 6px;
+}
+
+.fe-close-button {
+  color: #0f74d1;
+  font-size: 14px;
+  font-weight: 500;
+}

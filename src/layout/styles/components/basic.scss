@@ -1,0 +1,65 @@
+html,
+body,
+html * {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #222222;
+}
+
+input {
+  max-width: 100%;
+  width: 100%;
+}
+
+button {
+  appearance: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.fe-main-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+.fe-head {
+  background: #0f74d1;
+  border-radius: 6px;
+}
+
+.fe-content {
+  padding: 15px 20px;
+}

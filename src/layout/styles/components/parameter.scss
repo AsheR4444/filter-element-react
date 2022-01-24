@@ -1,0 +1,45 @@
+.fe-params {
+  margin-bottom: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+}
+
+.fe-param {
+  max-width: 170px;
+}
+
+.fe-param__button {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 6px;
+  font-size: 12px;
+  transition: color 0.2s;
+  font-weight: 500;
+
+  &:hover {
+    color: #0f74d1;
+  }
+}
+
+.fe-param__button-arrow {
+  color: #b2b2b2;
+}
+
+.fe-param__input {
+  padding: 5px 6px;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+}
+
+.fe-param__range {
+  display: block;
+  width: 100%;
+}
+
+.fe-param__inputs {
+  display: flex;
+  gap: 6px;
+  margin-top: 20px;
+  appearance: none;
+}

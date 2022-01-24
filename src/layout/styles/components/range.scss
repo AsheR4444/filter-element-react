@@ -1,0 +1,96 @@
+.fe-range-wrapper {
+  max-width: 100%;
+  width: 100%;
+  height: 16px;
+  position: relative;
+  top: 10px;
+}
+
+.fe-range {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.fe-range__track,
+.fe-range__range,
+.fe-range__left-value,
+.fe-range__right-value {
+  position: absolute;
+}
+
+.fe-range__track,
+.fe-range__range {
+  height: 5px;
+}
+
+.fe-range__track {
+  background-color: #b2b2b2;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.fe-range__range {
+  background-color: #0f74d1;
+  z-index: 2;
+  max-width: 100%;
+}
+
+.fe-range__left-value,
+.fe-range__right-value {
+  color: #dee2e6;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.fe-range__left-value {
+  left: 6px;
+}
+
+.fe-range__right-value {
+  right: -4px;
+}
+
+.fe-thumb,
+.fe-thumb::-webkit-slider-thumb {
+  appearance: none;
+}
+
+.fe-thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+}
+
+.fe-thumb--zindex-3 {
+  z-index: 3;
+}
+
+.fe-thumb--zindex-4 {
+  z-index: 4;
+}
+
+.fe-thumb--zindex-5 {
+  z-index: 5;
+}
+
+.fe-thumb::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #b2b2b2;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #0f74d1;
+  }
+}
