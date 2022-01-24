@@ -17,7 +17,7 @@ export const Filter = ({ opened, parametersList }) => {
         <>
             {opened && (
                 <div className="fe-content">
-                    <ParametersList list={parametersList} />
+                    <ParametersList list={parametersQueue} />
 
                     <button className="fe-close-button" onClick={showParameters}>
                         Показать {parametersList.length > 4 ? 'меньше ' : 'больше '}

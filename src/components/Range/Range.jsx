@@ -1,7 +1,7 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react'
 import classnames from 'classnames'
 
-export const Range = ({ min, max, onChange }) => {
+export const Range = ({ min, max, onChange, onReset }) => {
     const [minVal, setMinVal] = useState(min)
     const [maxVal, setMaxVal] = useState(max)
     const minValRef = useRef(null)

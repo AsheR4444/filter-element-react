@@ -10,14 +10,12 @@ import { ReactComponent as Arrow } from './layout/svg/arrow.svg'
 export const App = () => {
     const [isFilterOpened, setisFilterOpened] = useState(false)
 
-    const openFilter = () => {
-        setisFilterOpened(!isFilterOpened)
-    }
+    const openFilter = () => setisFilterOpened(!isFilterOpened)
 
     return (
         <div className="fe-app">
             <div className="fe-main-wrapper">
-                <div className="fe-head">
+                <div className={isFilterOpened ? 'fe-head is-active' : 'fe-head'}>
                     <Button onClick={openFilter} type="init" opened={isFilterOpened}>
                         Подбор по параметрам
                         <span className="fe-init-button__arrow fe-arrow-button__arrow">

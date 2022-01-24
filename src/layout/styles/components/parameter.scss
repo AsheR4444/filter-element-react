@@ -26,6 +26,9 @@
   font-size: 12px;
   transition: color 0.2s;
   font-weight: 500;
+  max-width: 115px;
+  text-align: left;
+  align-items: center;
 
   &:hover {
     color: var(--col-4);
@@ -54,4 +57,18 @@
   gap: 6px;
   margin-top: 20px;
   appearance: none;
+}
+
+.fe-param__head {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.fe-param__clear-button {
+  width: 8px;
+  height: 8px;
+  position: relative;
+  top: -3px;
 }
